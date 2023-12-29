@@ -39,3 +39,31 @@ var_dump( $numbers );
 
 $numbers_with_keys = [ 99 => 'One', 1 => 'two', 2 => 'three' ];
 var_dump( $numbers_with_keys );
+
+foreach ( $numbers_with_keys as $key => $number){
+
+    if($key == '2'){
+        continue;
+    };
+
+    echo "The key on $numbers is $number";
+    echo '<br/>';
+}
+
+for ( $i = 0; $i < 10; $i++){
+    echo $i;
+}
+
+$zero = 0;
+
+while ( $zero < 5 ){
+    echo $zero;
+    echo '<br />';
+    $zero++;
+}
+
+do{
+    echo $zero;
+    echo '<br />';
+    $zero++;
+} while ( $zero < 5 );

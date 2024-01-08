@@ -84,6 +84,25 @@ function calc ($x, $y ){
 $sum = calc ( 1, 2 );
 echo $sum;
 
-$tropic_fruits = arra( 'Orange', 'Banana', 'Lemon');
+$tropic_fruits = array( 'Orange', 'Banana', 'Lemon');
 
 $garten_fruits = array ( 'Strawberry', 'Cherry' );
+
+var_dump( $garten_fruits );
+
+$fruits = array_merge( $tropic_fruits, $garten_fruits ); //concat in js
+var_dump( $fruits );
+
+$fruits = sort( $fruits );
+var_dump( $fruits );
+
+function check_for_fruit( $array, $fruit ){
+    if ( in_array( $fruit, $array )){
+        echo "We have $fruit in our array";
+    } else {
+        var_dump('in else');
+    }
+}
+
+check_for_fruit( $tropic_fruits, 'Lemon ');
+

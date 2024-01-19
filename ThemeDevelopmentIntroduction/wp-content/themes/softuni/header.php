@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Robot</title>
+        <meta charset="<?php bloginfo( 'charset' ); ?>" />
+        <title><?php wp_title(); ?></title>
+        <link rel="profile" href="http://gmpg.org/xfn/11" />
+        <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+        <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
+        <?php wp_head(); ?>
+        
+   
 
         <!-- CSS -->
 
@@ -13,13 +16,6 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 
-        <!-- files -->
-        <link href="http://localhost/softuni/wp-content/themes/softuni/assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="http://localhost/softuni/wp-content/themes/softuni/assets/css/magnific-popup.css" rel="stylesheet">
-        <link href="http://localhost/softuni/wp-content/themes/softuni/assets/css/owl.carousel.css" rel="stylesheet">
-        <link href="http://localhost/softuni/wp-content/themes/softuni/assets/css/owl.carousel.theme.min.css" rel="stylesheet">
-        <link href="http://localhost/softuni/wp-content/themes/softuni/assets/css/ionicons.css" rel="stylesheet">
-        <link href="http://localhost/softuni/wp-content/themes/softuni/assets/css/main.css" rel="stylesheet">
 
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

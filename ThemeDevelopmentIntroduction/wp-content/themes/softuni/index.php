@@ -1,5 +1,7 @@
+
 <?php get_header(); ?>
-  
+
+
                 <div class="intro row">
                     <div class="overlay"></div>
                     <div class="col-sm-6 col-sm-offset-6">
@@ -16,6 +18,7 @@
     <!-- Product -->
 
         <section id="product" class="product">
+
             <div class="container section-bg">
                 <div class="row">
                     <div class="col-sm-12">

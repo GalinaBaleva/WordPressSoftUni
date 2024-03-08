@@ -92,12 +92,12 @@ add_action ( 'add_meta_boxes', 'robots_register_meta_boxes' );
 function robots_featured_metabox_callback ($post_id)
 {
 	$checked = get_post_meta($post_id->ID, 'is_featured', true);
+
 	?>
 	<div>
 		<label for='is-featured'>Is Featured?</label>
-		<input id='is-featured' name='is-featured' type='checkbox' value='1' 
-		<?php checked( $checked, 1, true ); ?>>
-		
+		<input name="is-featured" name="is-featured" value="1" type="checkbox"
+	<?php checked( $checked, 1, true ); ?>/>
 	</div>
 	<?php
 }
@@ -109,6 +109,7 @@ function robots_featured_metabox_callback ($post_id)
 
 function robots_meta_save ( $post_id )
 {
+
 	if ( empty( $post_id ) ) {
 		return;
 	}
@@ -116,7 +117,8 @@ function robots_meta_save ( $post_id )
 	$featured = '';
 
 	if( isset($_POST['is-featured'])){
-		$featured = esc_attr($_POST['is-fearured']);
+
+		$featured = esc_attr($_POST['is-featured']);
 	}
 
 	update_post_meta($post_id, 'is_featured', $featured );

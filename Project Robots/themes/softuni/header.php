@@ -31,8 +31,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <a href="index.html"><img
-                            src="http://localhost/softuni/wp-content/themes/softuni/assets/images/logo.png"
+                    <a href="<?php echo get_home_url(); ?>"><img
+                            src="http://localhost/robots/wp-content/themes/softuni/assets/images/logo.png"
                             alt="logo"></a>
                 </div>
                 <div class="col-sm-3 col-sm-offset-3 text-right">

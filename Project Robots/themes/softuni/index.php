@@ -31,19 +31,19 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="porduct-box">
-                            <img class="img-responsive" src="http://localhost/softuni/wp-content/themes/softuni/assets/images/product-1.jpg" alt="product">
+                            <img class="img-responsive" src="http://localhost/robots/wp-content/themes/softuni/assets/images/product-1.jpg" alt="product">
                             <h3 class="product-title">Space robot</h3>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="porduct-box">
-                            <img class="img-responsive" src="http://localhost/softuni/wp-content/themes/softuni/assets/images/product-2.jpg" alt="product">
+                            <img class="img-responsive" src="http://localhost/robots/wp-content/themes/softuni/assets/images/product-2.jpg" alt="product">
                             <h3 class="product-title">Sports robot</h3>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="porduct-box">
-                            <img class="img-responsive" src="http://localhost/softuni/wp-content/themes/softuni/assets/images/product-3.jpg" alt="product">
+                            <img class="img-responsive" src="http://localhost/robots/wp-content/themes/softuni/assets/images/product-3.jpg" alt="product">
                             <h3 class="product-title">Toy for kids</h3>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                             </p>
                         </div>
                         <div class="col-sm-12">
-                            <img class="img-responsive" src="http://localhost/softuni/wp-content/themes/softuni/assets/images/history.png" alt="history">
+                            <img class="img-responsive" src="http://localhost/robots/wp-content/themes/softuni/assets/images/history.png" alt="history">
                         </div>
                     </div>
                 </div>
@@ -121,40 +121,40 @@
                        <div class="col-sm-12">
                            <div id="partner-slider" class="owl-carousel">
                                 <div class="item">
-                                    <img src="http://localhost/softuni/wp-content/themes/softuni/assets/images/6.png" alt="partner">
+                                    <img src="http://localhost/robots/wp-content/themes/softuni/assets/images/6.png" alt="partner">
                                 </div>
                                 <div class="item">
-                                    <img src="http://localhost/softuni/wp-content/themes/softuni/assets/images/7.png" alt="partner">
+                                    <img src="http://localhost/robots/wp-content/themes/softuni/assets/images/7.png" alt="partner">
                                 </div>
                                 <div class="item">
-                                    <img src="http://localhost/softuni/wp-content/themes/softuni/assets/images/8.png" alt="partner">
+                                    <img src="http://localhost/robots/wp-content/themes/softuni/assets/images/8.png" alt="partner">
                                 </div>
                                 <div class="item">
-                                    <img src="http://localhost/softuni/wp-content/themes/softuni/assets/images/9.png" alt="partner">
+                                    <img src="http://localhost/robots/wp-content/themes/softuni/assets/images/9.png" alt="partner">
                                 </div>
                                 <div class="item">
-                                    <img src="http://localhost/softuni/wp-content/themes/softuni/assets/images/6.png" alt="partner">
+                                    <img src="http://localhost/robots/wp-content/themes/softuni/assets/images/6.png" alt="partner">
                                 </div>
                                 <div class="item">
-                                    <img src="http://localhost/softuni/wp-content/themes/softuni/assets/images/7.png" alt="partner">
+                                    <img src="http://localhost/robots/wp-content/themes/softuni/assets/images/7.png" alt="partner">
                                 </div>
                                 <div class="item">
-                                    <img src="http://localhost/softuni/wp-content/themes/softuni/assets/images/8.png" alt="partner">
+                                    <img src="http://localhost/robots/wp-content/themes/softuni/assets/images/8.png" alt="partner">
                                 </div>
                                 <div class="item">
-                                    <img src="http://localhost/softuni/wp-content/themes/softuni/assets/images/9.png" alt="partner">
+                                    <img src="http://localhost/robots/wp-content/themes/softuni/assets/images/9.png" alt="partner">
                                 </div>
                                 <div class="item">
-                                    <img src="http://localhost/softuni/wp-content/themes/softuni/assets/images/6.png" alt="partner">
+                                    <img src="http://localhost/robots/wp-content/themes/softuni/assets/images/6.png" alt="partner">
                                 </div>
                                 <div class="item">
-                                    <img src="http://localhost/softuni/wp-content/themes/softuni/assets/images/7.png" alt="partner">
+                                    <img src="http://localhost/robots/wp-content/themes/softuni/assets/images/7.png" alt="partner">
                                 </div>
                                 <div class="item">
-                                    <img src="http://localhost/softuni/wp-content/themes/softuni/assets/images/8.png" alt="partner">
+                                    <img src="http://localhost/robots/wp-content/themes/softuni/assets/images/8.png" alt="partner">
                                 </div>
                                 <div class="item">
-                                    <img src="http://localhost/softuni/wp-content/themes/softuni/assets/images/9.png" alt="partner">
+                                    <img src="http://localhost/robots/wp-content/themes/softuni/assets/images/9.png" alt="partner">
                                 </div>
                             </div>
                        </div>

@@ -33,22 +33,22 @@
                 <div class="widget-img-box">
                     <a class="test-popup-link" href="assets/images/widget-big-1.png">
                         <img class="widget-img"
-                            src="http://localhost/softuni/wp-content/themes/softuni/assets/images/widget-1.png"
+                            src="http://localhost/robots/wp-content/themes/softuni/assets/images/widget-1.png"
                             alt="widget">
                     </a>
                     <a class="test-popup-link" href="assets/images/widget-big-2.png">
                         <img class="widget-img"
-                            src="http://localhost/softuni/wp-content/themes/softuni/assets/images/widget-2.png"
+                            src="http://localhost/robots/wp-content/themes/softuni/assets/images/widget-2.png"
                             alt="widget">
                     </a>
                     <a class="test-popup-link" href="assets/images/widget-big-3.png">
                         <img class="widget-img"
-                            src="http://localhost/softuni/wp-content/themes/softuni/assets/images/widget-3.png"
+                            src="http://localhost/robots/wp-content/themes/softuni/assets/images/widget-3.png"
                             alt="widget">
                     </a>
                     <a class="test-popup-link" href="assets/images/widget-big-4.png">
                         <img class="widget-img"
-                            src="http://localhost/softuni/wp-content/themes/softuni/assets/images/widget-4.png"
+                            src="http://localhost/robots/wp-content/themes/softuni/assets/images/widget-4.png"
                             alt="widget">
                     </a>
                 </div>

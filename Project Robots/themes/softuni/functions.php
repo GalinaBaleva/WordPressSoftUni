@@ -3,6 +3,9 @@
 /**
  * Never worry about cache again!
  */
+
+ add_theme_support( 'post-thumbnails' );
+
 function softuni_assets ( $hook )
 {
 

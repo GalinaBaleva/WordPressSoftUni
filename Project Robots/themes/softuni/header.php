@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <a href="<?php echo get_home_url(); ?>"><img
+                    <a href="<?php echo esc_url ( get_home_url () ); ?>"><img
                             src="http://localhost/robots/wp-content/themes/softuni/assets/images/logo.png"
                             alt="logo"></a>
                 </div>
@@ -54,7 +54,6 @@
 
     <section id="header" class="main-header faq-header inner-header">
         <div class="container">
-
             <div class="row">
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
@@ -80,3 +79,6 @@
             </div><!-- /.navbar-collapse -->
             </nav>
         </div>
+        </div> <!-- /.container -->
+        <div class="nutral"></div>
+    </section> <!-- /#header -->

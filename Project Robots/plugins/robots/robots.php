@@ -14,13 +14,26 @@
  * Domain Path:       /languages
  */
 
+
 //  include "/includes/cpt-robots.php";
 
 include 'includes/functions.php';
 
 
-if( ! defined( 'ROBOTS_INCLUDE' ) ) {
-    define( 'ROBOTS_INCLUDE', plugin_dir_path( __FILE__) . 'includes');
+if (!defined('ROBOTS_INCLUDE')) {
+    define('ROBOTS_INCLUDE', plugin_dir_path(__FILE__) . 'includes');
 }
 
 require ROBOTS_INCLUDE . '/cpt-robots.php';
+
+/**
+ * Enqueue all of the assets for my plugin
+ */
+
+function ro_robots_enqueue()
+{
+    wp_enqueue_script('robots-script', plugins_url('/assets/script.js', __FILE__), array('jquery'), 1.1);
+
+    wp_localize_script( 'robots-script', 'my_ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+}
+add_action('wp_enqueue_scripts', 'ro_robots_enqueue');

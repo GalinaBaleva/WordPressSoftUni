@@ -58,16 +58,48 @@ function robots_like()
     $pots_id = esc_attr($_POST['post_id']);
 
 
-    $likes_number = get_post_meta( $pots_id, 'likes', true );
+    $likes_number = get_post_meta($pots_id, 'likes', true);
 
     if (empty($likes_number)) {
         $likes_number = 0;
     }
 
     //add custom logic to prevent bed users
-    
+
     update_post_meta($pots_id, 'likes', $likes_number + 1);
 }
 
 add_action('wp_ajax_nopriv_robots_like', 'robots_like');
 add_action('wp_ajax_robots_like', 'robots_like');
+
+/**
+ * Dispay related posts to our single robots view
+ */
+
+function robots_display_related_posts($pots_id = 0)
+{
+    if (empty($pots_id)) {
+        return;
+    }
+
+    $content = '';
+
+    $related_posts = get_field('related_posts', $pots_id);
+
+    if (!empty($related_posts) && is_array($related_posts)) {
+
+        ?> 
+        <h3>Related Posts</h3>
+        <?php
+
+        foreach ($related_posts as $post) {
+            ?>
+            <div class="related-post">
+                <a href="<?php get_the_permalink($post->ID)?>">
+                    <?php echo $post->post_title?>
+                </a>
+            </div>
+            <?php
+        }
+    }
+}

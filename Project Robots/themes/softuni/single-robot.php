@@ -1,16 +1,16 @@
-<?php get_header(); ?>    
+<?php get_header(); ?>
 
-    <div class="intro row">
-        <div class="overlay"></div>
-        <div class="col-sm-12">
-            <ol class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><?php the_title(); ?></li>
-            </ol>
-        </div>
-        </div> <!-- /.intro.row -->
-    </div> <!-- /.container -->
-    <div class="nutral"></div>
+<div class="intro row">
+    <div class="overlay"></div>
+    <div class="col-sm-12">
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><?php the_title(); ?></li>
+        </ol>
+    </div>
+</div> <!-- /.intro.row -->
+</div> <!-- /.container -->
+<div class="nutral"></div>
 </section> <!-- /#header -->
 
 <!-- FAQ -->
@@ -18,21 +18,32 @@
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
             <div class="container page-bgc">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="title-box">
-                    <h1 class="title mt0"><?php the_title() ?></h1>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box">
+                            <h1 class="title mt0"><?php the_title() ?></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="inner-p">
+                            <?php the_content(); ?>
+                        </div>
+
+                        <div class="like-button">
+                            <a class="robots-like" href="javascript:void(0)" data-post-id="<?php echo get_the_ID(); ?>">Like me!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="related-posts">
+                    <?php
+                    if (function_exists('robots_display_related_posts')) {
+                        robots_display_related_posts(get_the_ID());
+                    }
+                    ?>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                <div class="inner-p">
-                    <?php the_content(); ?>
-                </div>
-            </div>
-        </div>
-    </div>
         <?php endwhile; ?>
 
     <?php else : ?>
@@ -43,5 +54,3 @@
 </section>
 
 <?php get_footer(); ?>
-
-
